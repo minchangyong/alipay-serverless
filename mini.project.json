@@ -1,0 +1,11 @@
+{
+  "cloud": {
+    "type": "miniappServerless"
+  },
+  "miniprogramRoot": "client",
+  "component2": true,
+  "axmlStrictCheck": true,
+  "enableParallelLoader": true,
+  "enableAppxNg": false,
+  "enableHMR": true
+}

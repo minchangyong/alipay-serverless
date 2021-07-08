@@ -1,0 +1,20 @@
+.content {
+  margin: 20rpx 0;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+
+image {
+  width: 200rpx;
+  margin: 0 auto;
+  display: block;
+}
+
+button {
+  width: 90%;
+  font-size: 28rpx;
+  font-weight: bold;
+  text-align: center;
+  margin: 50rpx auto;
+  border-radius: 16rpx;
+}

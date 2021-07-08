@@ -1,0 +1,1 @@
+"use strict";var isObject=require("../isObject");function isObjectObject(t){return!0===isObject(t)&&"[object Object]"===Object.prototype.toString.call(t)}function isPlainObject(t){var e,c;return!1!==isObjectObject(t)&&("function"==typeof(e=t.constructor)&&(!1!==isObjectObject(c=e.prototype)&&!1!==c.hasOwnProperty("isPrototypeOf")))}module.exports=isPlainObject;

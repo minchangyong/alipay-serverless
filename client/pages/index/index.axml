@@ -1,0 +1,18 @@
+<button type="primary" open-type="getAuthorize" onGetAuthorize="onGetAuthorize" scope='userInfo'>获取授权信息</button>
+<view class="content" a:if="{{userId}}">当前用户UserId：{{userId}}</view>
+<button type="primary" onTap="handleCreateCode">生成小程序码</button>
+<button type="primary" onTap="handleCreatePoster">生成海报分享图</button>
+<image src="{{qrCodeUrl}}" a:if="{{qrCodeUrl}}" mode="widthFix"/>
+<button type="primary" onTap="handleUploadImg">上传图片</button>
+<image src="{{imageUrl}}" a:if="{{imageUrl}}" mode="widthFix"/>
+<form report-submit="true" onSubmit="handleSubmit">
+  <button type="primary" formType="submit">发送模版消息（需先点击获取授权信息）</button>
+</form>
+<button type="primary" onTap="handleCreateLink">支付宝人脸认证</button>
+<button type="primary" onTap="handlePayMent">支付宝支付（需先点击获取授权信息）</button>
+<textarea placeholder="辣鸡子默" style="margin-top: 100rpx;" onInput="handleTextarea"></textarea>
+<button type="primary" onTap="handleCheckText">文本智能安全检测</button>
+<button type="primary" open-type="getAuthorize" onGetAuthorize="onGetAuthorize" scope='phoneNumber'>授权手机号</button>
+    
+<painter a:if="{{startInit}}" palette="{{imgDraw}}" onSuccess="onSuccess" onError="onError"></painter> 
+<image src="{{imagePath}}" mode="widthFix" style="width: 100%;" />

@@ -1,0 +1,1 @@
+"use strict";function _interopDefault(e){return e&&"object"==typeof e&&"default"in e?e.default:e}var _typeof=_interopDefault(require("@babel/runtime/helpers/typeof"));function isObject(e){return null!=e&&"object"===_typeof(e)&&!1===Array.isArray(e)}module.exports=isObject;
